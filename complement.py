@@ -96,10 +96,12 @@ def solve(combo):
     result = []
     for ui in uniq:
         result.append(raw[ui])
-    print len(result)
-    #print result
+    #print len(result)
+    print result
+    print ","
     return c[0]
 
+print "let data = ["
 if(True):
     solve([10,1,0,0,0])
     solve([8,2,0,0,0])
@@ -148,3 +150,5 @@ if(True):
     solve([2,0,0,0,2])
     solve([0,1,0,0,2])
     solve([12,0,0,0,0])
+
+print "];"
