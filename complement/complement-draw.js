@@ -116,21 +116,21 @@ for (let di=0;di<data.length;di++) {
 footer();
 
 function drawPolygon(points) {
-  console.log(`<circle  stroke="none" fill="#999999" r="1.05"/><circle  stroke="none" fill="#cccccc" r="1"/><polygon fill="#001180" points="`+points+`"/>`);
+    console.log('<circle  stroke="none" fill="#999999" r="1.05"/><circle  stroke="none" fill="#cccccc" r="1"/><polygon fill="#001180" points="'+points+'"/>');
 }
 function transform (i) {
-  let scale= 0.25;
-  let size = 10;
-  let scaledSize = scale*size;
-  let xx = i%size;
-  let yy = (i-xx)/size;
-  let x = 2 + scaledSize*xx;
-  let y = 2 + scaledSize*yy;
-  console.log(`</g><g test="${i} ${xx} ${yy}" transform="translate(${x},${y})">`);
+    let scale= 0.25;
+    let size = 10;
+    let scaledSize = scale*size;
+    let xx = i%size;
+    let yy = (i-xx)/size;
+    let x = 2 + scaledSize*xx;
+    let y = 2 + scaledSize*yy;
+    console.log(`</g><g test="${i} ${xx} ${yy}" transform="translate(${x},${y})">`);
 }
 function header(){
-  console.log(`<svg width="1000" height="1450"><g transform="translate(4,4),scale(30,30)"><g>`);
+    console.log('<svg width="1000" height="1450"><g transform="translate(4,4),scale(30,30)"><g>');
 }
 function footer(){
-  console.log(`</g></g></svg>`);
+    console.log('</g></g></svg>');
 }
