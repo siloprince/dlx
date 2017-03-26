@@ -61,7 +61,8 @@ def makeTiling(p,q):
 def solve(p,q):
     c = [0]
     def counter(xs):
-        #print xs
+        print xs
+        print ","
         c[0] += 1
    
     if (p*q)%3 != 0:
@@ -71,3 +72,7 @@ def solve(p,q):
     dlx.algoDLX(counter, ls)
     print c[0]
 
+print "'use strict';"
+print "function data () { retrun ["
+solve(8,12)
+print "];);"
