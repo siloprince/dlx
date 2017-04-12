@@ -52,8 +52,8 @@
                 '#aa00ff',
             ];
             let styles = [];
-            styles.push('<style>.triangle { fill-opacity: 0.0; }</style>');
-            styles.push('<style>.picked-triangle { fill-opacity: 1.0; }</style>');
+            styles.push('<style>.'+SHAPE+' { fill-opacity: 0.0; }</style>');
+            styles.push('<style>.picked-'+SHAPE+' { fill-opacity: 1.0; }</style>');
             let shapes = [];
             for (let y = 0; y < ymax; y++) {
                 for (let x = 0; x < xmax; x++) {
