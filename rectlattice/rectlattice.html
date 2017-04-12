@@ -1,0 +1,21 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.23/webcomponents.min.js"></script>
+<script type="text/javascript" src="./rectlattice.js"></script>
+<svg width="800" height="500">
+  <g transform="translate(20,20)">
+    <g id="lattice" is="lattice-rectangle" unit="20" subdiv="1" xmax="8" ymax="8">
+  </g>
+</svg>
+<textarea id="result" rows="5" cols="100">
+</textarea>
+<script>
+let result =document.querySelector('#result');
+let lattice=document.querySelector('#lattice');
+lattice.addEventListener('mouseup',function(ev) {
+  result.value = '['+lattice.getAttribute('picked')+']';
+});
+</script>
+<svg width="800" height="500">
+  <g transform="translate(20,20)">
+    <g is="lattice-rectangle" unit="20" subdiv="3" xmax="8" ymax="8" picked="">
+  </g>
+</svg>
